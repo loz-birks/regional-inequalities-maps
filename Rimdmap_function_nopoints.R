@@ -1,6 +1,5 @@
 # Read Libraries ----------------------------------------------------------
 # not sure that all of these are required...
-
 library(tidyverse)
 library(gmapsdistance)
 library(geojsonR)
