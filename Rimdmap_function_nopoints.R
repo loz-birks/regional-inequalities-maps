@@ -87,20 +87,16 @@ map_fn <- function(geog){
   return(map)
 }
 
-# South East Region
+# we now have a function that we can input either "Region" or one of the ICB codes to produce a map e.g. 
 map_fn("Region")
-# Kent and Medway
-map_fn("QKS")
-# Frimley
-map_fn("QNQ")
-# Sussex
-map_fn("QNX")
-# Hampshire and the Isle of Wight
-map_fn("QRL")
-# Buckinghamshire, Oxfordshire and Berkshire West
-map_fn("QU9")
-# Surrey
-map_fn("QXU")
+
+# For reference the following codes refer to the following ICBS:
+# BOB: QU9
+# Frimley: QNQ
+# HIOW: QRL
+# K&M: QKS
+# Surrey: QXU
+# Sussex: QNX
 
 # Quickly draw a regional map with borders around ICB ---------------------
 boundaries <- boundaries_lsoa
