@@ -34,8 +34,7 @@ boundaries_lsoa <- boundaries_lsoa %>%
 df_imd <- as_tibble(read.csv("backup files/File_1_-_IMD2019_Index_of_Multiple_Deprivation.csv", sep = ','))
 df_imdquintile <- df_imd %>% 
   mutate(IMDquintile = ntile(as.numeric(IMD_Rank), 5),
-         lsoa11cd = as.character(LSOA_code_2011)) %>% 
-  select(-LSOA_code_2011)
+         lsoa11cd = as.character(LSOA_code_2011))
 
 # create colour palette
 mycols <- colors()[c(107, 98, 415, 498, 624)]
